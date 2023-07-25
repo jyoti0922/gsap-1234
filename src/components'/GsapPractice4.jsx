@@ -14,7 +14,7 @@ const GsapPractice4 = () => {
         markers: false,
         invalidateOnRefresh: true,
       },
-      ease: "none",
+      // ease: "none",
       scale: () => 1 - (cards.length - index) * 0.025,
     });
 
@@ -25,8 +25,8 @@ const GsapPractice4 = () => {
       pin: true,
       pinSpacing: false,
       markers: false,
-      // id: "pin",
-      // invalidateOnRefresh: true,
+      id: "pin",
+      invalidateOnRefresh: true,
     });
   });
 
@@ -55,8 +55,6 @@ const GsapPractice4 = () => {
           <div className="bg-[yellow] w-full h-[800px]"></div>
         </div>
       </div>
-
-      {/* <div className="bg-[red] py-12 h-[100vh]"></div> */}
     </>
   );
 };
